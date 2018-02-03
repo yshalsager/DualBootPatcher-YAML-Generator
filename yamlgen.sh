@@ -120,7 +120,6 @@ cat << EOF
   codenames:
     - $device_codename
     - $device_id
-
   architecture: $device_architecture
 
   block_devs:
