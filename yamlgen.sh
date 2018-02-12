@@ -126,7 +126,6 @@ cat << EOF
     base_dirs:
       - $partition_path_1
       - $partition_path_2
-
     system:
       - $system_p1
       - $system_p2
@@ -179,3 +178,4 @@ sed -i -- 's/system_image/system/g' ../$device_brand.yml
 #Clean
 cd ..
 rm -rf $(ls $1 | cut -d . -f 1,2)
+echo "Done! check your $device_brand.yml for any mistakes"
